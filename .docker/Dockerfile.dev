@@ -3,13 +3,7 @@ RUN apk update && apk add --no-cache libc6-compat
 RUN npm i -g pnpm
 WORKDIR /app
 
-# Install dependencies only when needed
-FROM base AS deps
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm i --frozen-lockfile;
-
 FROM base AS dev-container
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN apk add git
