@@ -1,9 +1,5 @@
 FROM node:alpine AS base
-RUN apk update && apk add --no-cache libc6-compat
-RUN npm i -g pnpm
-WORKDIR /app
-
-FROM base AS dev-container
+RUN apk update 
+RUN apk add --no-cache libc6-compat git
 WORKDIR /app
 COPY . .
-RUN apk add git
