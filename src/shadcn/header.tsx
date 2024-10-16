@@ -17,9 +17,9 @@ import { navMenus, profileMenus } from '@/common/menu_item'
 
 import ginkgoLogo from '@/assets/biosecurity-logo-black.svg'
 
-const Header = () => {
+const ShadcnHeader = () => {
   return (
-    <header className='bg-white w-screen flex h-16 pl-5 justify-stretch'>
+    <header className='bg-white w-screen flex h-[64px] pl-5 justify-stretch shadow-lg shadow-black flex-none'>
       <div className='my-3'>
         <img src={ginkgoLogo} className='h-full w-auto flex-none ' />
       </div>
@@ -55,4 +55,4 @@ const Header = () => {
   )
 }
 
-export { Header }
+export { ShadcnHeader }
