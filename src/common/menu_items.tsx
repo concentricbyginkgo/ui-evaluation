@@ -1,8 +1,8 @@
-import VideoLabelIcon from '@mui/icons-material/VideoLabel'
-import BeachAccessIcon from '@mui/icons-material/BeachAccess'
-import ApartmentIcon from '@mui/icons-material/Apartment'
-import GroupIcon from '@mui/icons-material/Group'
-import PersonIcon from '@mui/icons-material/Person'
+import { ImLab } from 'react-icons/im'
+import { IoIosUmbrella } from 'react-icons/io'
+import { FaBuilding } from 'react-icons/fa'
+import { FaUsers } from 'react-icons/fa'
+import { FaUserNurse } from 'react-icons/fa'
 
 type Menu = {
   label: string
@@ -13,28 +13,28 @@ type Menu = {
 const navMenus: Menu[] = [
   {
     label: 'Pooled Sample',
-    link: '/',
-    icon: <VideoLabelIcon />,
+    link: '#',
+    icon: <ImLab />,
   },
   {
     label: 'Umbrella Organizations',
-    link: '/',
-    icon: <BeachAccessIcon />,
+    link: '#',
+    icon: <IoIosUmbrella />,
   },
   {
     label: 'Organizations',
-    link: '/',
-    icon: <ApartmentIcon />,
+    link: '#',
+    icon: <FaBuilding />,
   },
   {
     label: 'Team',
-    link: '/',
-    icon: <GroupIcon />,
+    link: '#',
+    icon: <FaUsers />,
   },
   {
     label: 'Test Takers',
-    link: '/',
-    icon: <PersonIcon />,
+    link: '#',
+    icon: <FaUserNurse />,
   },
 ]
 
